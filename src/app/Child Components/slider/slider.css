@@ -1,0 +1,14 @@
+.carousel-item {
+  padding: 1rem;
+}
+
+.carousel-inner {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}

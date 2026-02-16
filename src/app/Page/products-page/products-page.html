@@ -1,0 +1,10 @@
+<app-slider>
+   @for (product of products; track product.title) {
+    <app-item
+      [title]="product.title"
+      [price]="product.price"
+      [image]="product.image"
+      (add)="handleAddToCart(product)">
+    </app-item>
+  }
+</app-slider>

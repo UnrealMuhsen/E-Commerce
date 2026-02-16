@@ -1,0 +1,13 @@
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  margin-left: 0.8rem;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #ffd700; /* تأثير عند المرور على الرابط */
+}
