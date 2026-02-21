@@ -3,13 +3,13 @@ import { CommonModule } from '@angular/common';
 import { Item } from "../item/item";
 
 @Component({
-  selector: 'app-slider',
+  selector: 'app-slider2',
   standalone: true,
   imports: [Item, CommonModule],
-  templateUrl: './slider.html',
-  styleUrl: './slider.css'
+  templateUrl: './slider2.html',
+  styleUrl: './slider2.css'
 })
-export class Slider implements OnInit {
+export class Slider2 implements OnInit {
   @Input() items: { title: string; price: number; image: string }[] = [];
   
   chunkedItems: any[][] = [];

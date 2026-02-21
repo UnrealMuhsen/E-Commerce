@@ -9,5 +9,12 @@
 }
 
 .nav-link:hover {
-  color: #ffd700; /* تأثير عند المرور على الرابط */
+  color: #ffd700; 
+}
+.nav-link.active {
+  color: #ffd700; 
+}
+.hambozo{
+
+  color: #fff;
 }
