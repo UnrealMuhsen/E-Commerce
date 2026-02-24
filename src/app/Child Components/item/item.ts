@@ -1,4 +1,6 @@
 import { Component,Input,EventEmitter ,Output } from '@angular/core';
+import { CartService } from '../../../Service/cart.service';
+
 
 @Component({
   selector: 'app-item',
@@ -12,8 +14,11 @@ export class Item {
   @Input() image: string = '/Shirt.png';
 
   @Output() add = new EventEmitter<void>();
+  constructor(private cartService: CartService) {} 
 
   addToCart() {
-    this.add.emit();
+    this.cartService.addToCart(this.title, this.price); 
+        this.add.emit(); 
+
   }
 }
